@@ -26,4 +26,6 @@ script:
   - cd todoapp
   - ./gradlew test
   - ./gradlew assembleDebug
+  - ls app
+  - ls app/build
   - sonar-scanner
