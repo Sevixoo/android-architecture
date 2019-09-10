@@ -19,3 +19,14 @@ cache:
     - $HOME/.m2
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
+    
+addons:
+  sonarcloud:
+    organization: "Sevixoo"
+    token:
+      secure: "3df9b25bb0c5fc1728832f297344ec73bb7c6891"
+      
+script:
+  # other script steps might be done before running the actual analysis
+  - sonar-scanner
+
