@@ -9,9 +9,7 @@ android:
     - extra-google-m2repository
 jdk:
   - oraclejdk8
-script:
-  - cd todoapp
-  - ./gradlew test
+
 before_cache:
   - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
 cache:
@@ -23,7 +21,9 @@ cache:
 addons:
   sonarcloud:
     organization: "sevixoo"
-      
+    
 script:
-  # other script steps might be done before running the actual analysis
+  - cd todoapp
+  - ./gradlew test
+  - ./gradlew assembleDebug
   - sonar-scanner
