@@ -22,7 +22,7 @@ cache:
     
 addons:
   sonarcloud:
-    organization: "Sevixoo"
+    organization: "Sevixoo_android-architecture"
       
 script:
   # other script steps might be done before running the actual analysis
