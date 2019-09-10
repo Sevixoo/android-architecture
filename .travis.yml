@@ -25,6 +25,5 @@ addons:
 script:
   - cd todoapp
   - ./gradlew assembleDebug --stacktrace
-  - ls
-  - ls app
+  - ls app/build
   - sonar-scanner
